@@ -20,8 +20,8 @@ body:
       label: 'Do I have a custom or modified version of the application?'
       description: 'Some bugs may be specific to custom or modified versions of the application.'
       options:
-        - 'Yes'
         - 'No'
+        - 'Yes'
     validations:
       required: true
   - type: input

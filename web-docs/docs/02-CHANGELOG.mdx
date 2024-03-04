@@ -1,0 +1,81 @@
+---
+id: change-log
+title: Change Log
+sidebar_label: Change Log
+toc_max_heading_level: 2
+---
+
+## Version 0.0.7
+### Features
+- Updated and formatted GitHub Workflows
+  - Use latest actions/checkout, actions/setup-java, and actions/setup-node versions
+  - Improve header comments, descriptions, and branding
+  - Add more descriptive names/IDs to jobs and steps
+- Added GitHub issue templates and configuration
+  - Added issue templates for bug reports, feature requests, documentation issues, security
+    reports, and questions or support requests
+  - Added issue configuration to enforce issue templates and display links to HMS Networks support
+    resources
+- Updated IntelliJ Checkstyle configuration file
+- Added a Docusaurus component, `LatestVersionDisplay.js`, for displaying the latest version of the
+  project as an inline badge
+
+## Version 0.0.6
+### Features
+- Updated documentation to pull from common documentation repository
+  - Added commonDocRepoTargetBranchOrTag to ScDocusaurusConfig.js
+    - Branch or tag to pull documentation from in the common docs repo
+- Added configFileName to ScDocusaurusConfig.js
+  - Documentation now has access to reference the config file name as a configurable parameter
+- Added applicationJarFileName to ScDocusaurusConfig.js
+  - Documentation now has access to reference the generated JAR file name as a configurable parameter
+
+## Version 0.0.5
+### Features
+- Added Checkstyle configuration for code style and formatting enforcement
+  - Integrated Checkstyle into Maven build process
+### Bug Fixes
+- Fixed incorrect version number in `commit-format-check.yml` GitHub Actions workflow
+
+## Version 0.0.4
+### Features
+- Javadoc warnings now trigger build failure to ensure documentation quality
+
+## Version 0.0.3
+### Features
+- Improved code style and formatting configurations for IntelliJ and Eclipse IDEs
+  - Added IDE code style configuration information to documentation
+- Added a Popover component for web documentation, `popover.js`
+- Added a Highlight component for web documentation, `highlight.js`
+### Bug Fixes
+- Fixed VS Code tasks.json Maven commands
+- Standardized newlines in documentation
+- Corrected default debugger IP addresses in IDE configuration files to match the default in
+  the `flexy.properties` file
+- Fixed missing Jar file in artifacts from `release-build-outputs.yml` GitHub Actions workflow
+### Other
+- Updated IntelliJ IDE configuration files to latest formats
+- Organized Eclipse IDE configuration files under `.eclipse` directory
+
+## Version 0.0.2
+### Features
+- Added example configuration file
+- Added external Flexy properties file
+- Added `jvmrun` file autofill from `pom.xml`
+- Improved documentation and migrated to Docusaurus
+- Improved GitHub Actions workflows
+   - Added `jvmrun` file line-ending normalization
+   - Updated to latest plugin/action versions to resolve warnings
+### Bug Fixes
+- Resolved warnings due to deprecation of utilized GitHub Actions dependencies
+- Removed the stray/trailing NUL character from release bodies
+### Other
+- Excluded Ewon ETK from generated Javadocs
+
+## Version 0.0.1
+### Features
+- Initial Release
+### Bug Fixes
+- N/A
+### Other
+- N/A
